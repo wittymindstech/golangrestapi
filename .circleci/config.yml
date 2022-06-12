@@ -4,7 +4,7 @@ version: 2.1
 executors:
   docker-publisher: null
   environment: null
-  IMAGE_NAME: kumagaur/golangrestapi
+  IMAGE_NAME: kumagaur/golangrestapi:latest
   docker: null
   — image: 'circleci/node:latest'
   auth: null
@@ -19,7 +19,7 @@ command: >
   echo "$DOCKERHUB_PASSWORD" | docker login -u "$DOCKERHUB_USERNAME" —
   password-stdin
 
-  docker build -t kumagaur/golangrestapi .
+  docker build -t kumagaur/golangrestapi:latest .
 
   docker push kumagaur/golangrestapi:latest
 workflows:

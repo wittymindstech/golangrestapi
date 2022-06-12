@@ -15,7 +15,7 @@ jobs:
   publishLatestToHub: null
   executor: docker-publisher
 steps: — checkout — setup_remote_docker — run
-- slack/notify:
+-slack/notify:
           channel: wittymindstech.slack.com 
 name: Publish Docker Image to Docker Hub
 command: >

@@ -9,7 +9,7 @@ executors:
   — image: circleci/golang:1.15.1
   auth: null
   username: kumagaur
-  password: Chilwaria@#123
+  password: XXXXXX
 jobs:
   publishLatestToHub: null
   executor: docker-publisher
